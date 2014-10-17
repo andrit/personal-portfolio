@@ -25,6 +25,34 @@
 
 }
 
+@font-face {
+    font-family: 'davysregular';
+    src: url('DavysDingbats-webfont.eot');
+    src: url('DavysDingbats-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DavysDingbats-webfont.woff') format('woff'),
+         url('DavysDingbats-webfont.ttf') format('truetype'),
+         url('DavysDingbats-webfont.svg#davysregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'wc_rhesus_a_btaregular';
+    src: url('WC_Rhesus_A_Bta-webfont.eot');
+    src: url('WC_Rhesus_A_Bta-webfont.eot?#iefix') format('embedded-opentype'),
+         url('WC_Rhesus_A_Bta-webfont.woff') format('woff'),
+         url('WC_Rhesus_A_Bta-webfont.ttf') format('truetype'),
+         url('WC_Rhesus_A_Bta-webfont.svg#wc_rhesus_a_btaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
 /*used to be rgba(99,126,151,1);*/
 body {
 	font-family: ubunturegular, Helvetica, sans-serif;
@@ -95,9 +123,33 @@ h2 {
 	display:inline-block;
 	font-family:Impact;
 	font-size:2.4em;
-	margin-left:1.3em;
 	
 }
+
+/*
+.header-icons {
+	font-family: Davys Regular;
+    color: #333;
+    font-size:2em;	
+}
+
+.brand:before{
+    font-family: davysregular;
+    content: "\03bf";  /* Some fancy character */
+    color: #333;
+    font-size:2em;
+    margin-right: 10px;
+    }
+
+.brand:after {
+    font-family: davysregular;
+    content: "b";  /* Some fancy character */
+    color: #333;
+    font-size:2em;
+    margin-left: 10px;
+    }
+    */
+
 .nav-links a{
 color:white;
 	}
@@ -110,12 +162,16 @@ color:rgba(108, 66, 204, 0.6);
 
 }
 
+.nav-links  li a {
+	color:white;
+}
 
 .nav-links  li {
 	display:inline-block;
 	margin-left:0.25em;
 	border-right:0.15em solid white;
 	padding:0.45em;
+	color:white;
 }
 
 .nav-links  li:first-child {
@@ -221,17 +277,27 @@ line-height:1em;
 
 }
 
-.portrait-bio {
+.portrait-bio, .contact-img, .portfolio-img {
 	margin-top:6.2em;
+	outline:0.4em solid #333;
 	border:1em solid rgba(0, 0, 0, 0.4);
-	box-shadow: 2px 3px 2px rgba(0, 0, 242, 0.4);
 }
 
 /*Portfolio*/
 .portfolio {
 	background-color:rgba(89,54,168, 1);
+	margin:0 auto;
+}
 
-	}
+.work-sample{
+
+	
+}
+
+
+.work-sample:after {
+	content:
+}
 
 
 /*FOOTER*/
@@ -242,11 +308,70 @@ line-height:1em;
 	border-top: 2px solid #333;
 }
 
+@media all and (max-width: 1173px){
+	.practicals {
+	width:100%;
+	}
 
+	.practical-topics {
+		position:inline-block;
+		text-align:center;
+	}
+
+#about {
+  	margin-top:3em;
+  }
+
+  .top-banner {
+  height:860px;
+  }
+
+.social-intro{
+	width:100%;
+	margin: 0 auto;
+	margin-left:9.1em;
+}
+  .social {
+  	width:40%;
+  	display:inline-block;
+  	position:relative;
+  	top:-15px;
+
+  }
+
+  .intro {
+  width:40%;
+  display:inline-block;
+  margin-left:1.4em;
+ 
+  }
+
+}
 
 
 @media all and (max-width: 768px) {
   .sidebar-container {
     position: static;
   }
+
+  #about {
+  margin-top:26em;
+  }
+
+  .practical-topics #fe-web{
+  padding: 0.4em 0;
+  }
+
+  .social {
+  margin-top:4.4em;
+  }
+
+  .contact-img {
+  margin-left:7em;
+  }
+
+  .work-sample{
+margin-left:27%;
+	
+}
 }
