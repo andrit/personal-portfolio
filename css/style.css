@@ -132,7 +132,7 @@ h2 {
     color: #333;
     font-size:2em;	
 }
-*/
+
 .brand:before{
     font-family: 'davysregular';
     content: "\25CA";  /* Some fancy character */
@@ -148,7 +148,7 @@ h2 {
     font-size:2em;
     margin-left: 10px;
     }
-
+*/
 
 .nav-links a{
 color:white;
