@@ -132,23 +132,23 @@ h2 {
     color: #333;
     font-size:2em;	
 }
-
+*/
 .brand:before{
-    font-family: davysregular;
-    content: "\03bf";  /* Some fancy character */
+    font-family: "davysregular";
+    content: "\25CA";  /* Some fancy character */
     color: #333;
     font-size:2em;
     margin-right: 10px;
     }
 
 .brand:after {
-    font-family: davysregular;
-    content: "b";  /* Some fancy character */
+    font-family: "davysregular";
+    content: "\03A9";  /* Some fancy character */
     color: #333;
     font-size:2em;
     margin-left: 10px;
     }
-    */
+
 
 .nav-links a{
 color:white;
